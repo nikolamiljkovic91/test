@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CitrusSystems</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav__container">
+            <p class="nav__text">Register using:</p>
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__item__link" href="#" id="mobileLink">Mobile
+                        number</a><span class="nav__item__span">Or</span></li>
+                <li class="nav__item"><a class="nav__item__link" href="#" id="emailLink">Email</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <form class="form" novalidate>
+        <h2 class="form__text">Sign Up</h2>
+        <span class="form__message">Error: Invalid Input!</span>
+        <div class="form__spinner"><span class="form__spinner__item"></span></div>
+        <fieldset class="form__items">
+            <input class="form__input" type="text" placeholder="Email" id="email" />
+            <input class="form__input" type="number" placeholder="Mobile Number" id="number" />
+            <select class="form__select" name="currency" id="currency">
+                <option value="0" disabled selected hidden>Please select currency</option>
+                <option value="euro">Euro</option>
+                <option value="dollar">Dollar</option>
+                <option value="rsd">RSD</option>
+            </select>
+            <label class="form__label" for="terms">
+                <input class="form__input" type="checkbox" name="terms" id="terms">
+                I agree to the Terms & Conditions
+            </label>
+            <label class="form__label" for="promo">
+                <input class="form__input" type="checkbox" name="promo" id="promo">
+                I agree to receive promotional emails
+            </label>
+        </fieldset>
+        <button class="form__button" type="submit" disabled>Submit</button>
+    </form>
+
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
